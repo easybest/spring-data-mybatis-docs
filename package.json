@@ -1,0 +1,19 @@
+{
+  "name": "spring-data-mybatis",
+  "version": "0.0.1",
+  "description": "Simplifies the development of creating a MyBatis-based data access layer.",
+  "main": "index.js",
+  "authors": {
+    "name": "JARVIS SONG",
+    "email": "iamjarvissong@gmail.com"
+  },
+  "repository": "https://github.com/easybest/spring-data-mybatis-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
