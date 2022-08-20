@@ -1,0 +1,18 @@
+{
+  "name": "spring-data-mybatis-docs",
+  "version": "1.0.0",
+  "description": "Spring Data MyBatis Documentation",
+  "main": "index.js",
+  "repository": "git@github.com:easybest/spring-data-mybatis-docs.git",
+  "author": "JARVIS SONG <4566733+easybest@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.8",
+    "vue": "^3.2.37"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  }
+}
