@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 16
           cache: yarn
-      - run: yarn install --frozen-lockfile
+      - run: yarn install
 
       - name: Build
         run: yarn docs:build
@@ -22,5 +22,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
+          external_repository: easybest/spring-data-mybatis
+          publish_branch: gh-pages
           publish_dir: docs/.vitepress/dist
+          force_orphan: true
